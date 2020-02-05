@@ -1,3 +1,4 @@
+![Java CI](https://github.com/mlemnian/quarkus/workflows/Java%20CI/badge.svg?branch=master)
 # devhive project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
