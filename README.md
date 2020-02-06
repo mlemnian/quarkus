@@ -37,9 +37,9 @@ If you want to learn more about building native executables, please consult http
 Deploy war into the Applicationserver e.g. open liberty (https://openliberty.io/)
 
 ```
-./mvnw clean package -f pom-jee.xml
+./mvnw clean package -f pom.xml.jee
 cp target/devhive.war /PATH_TO_LIBERTY/wlp/usr/servers/defaultServer/dropins/
 /PATH_TO_LIBERTY/wlp/bin/server start
 ```
 
-Access the app: `localhost:9080/devhive/resources/hello`.
+Access the app: `localhost:9080/devhive-jee/resources/hello`.
