@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/mlemnian/quarkus) 
+
 ![Java CI](https://github.com/mlemnian/quarkus/workflows/Java%20CI/badge.svg?branch=master)
 # devhive project
 
