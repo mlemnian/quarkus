@@ -2,4 +2,5 @@ image:
   file: .gitpod.Dockerfile
   
 tasks:
-  - init: ./mvnw install -DskipTests=false
+  - before: echo "export GRAALVM_HOME=~/.sdkman/candidates/java/20.1.0.r11-grl/" >> .profile && source .profile && ${GRAALVM_HOME}/bin/gu install native-image
+    init: ./mvnw package -Pnative
