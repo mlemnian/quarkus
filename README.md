@@ -1,18 +1,20 @@
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/mlemnian/quarkus) 
-
-![Java CI](https://github.com/mlemnian/quarkus/workflows/Java%20CI/badge.svg?branch=master)
 # devhive project
+
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/mlemnian/quarkus)
+![Java CI](https://github.com/mlemnian/quarkus/workflows/Java%20CI/badge.svg?branch=master)
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/> .
 
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
-```
+
+```bash
 ./mvnw quarkus:dev
 ```
+
 Access the app: `localhost:8080/resources/hello`.
 
 ## Packaging and running the application
@@ -25,7 +27,7 @@ The application is now runnable using `java -jar target/devhive-1.0.0-SNAPSHOT-r
 
 ## Creating a native executable
 
-Prerequisites see https://quarkus.io/guides/building-native-image#prerequisites
+Prerequisites see <https://quarkus.io/guides/building-native-image#prerequisites>
 
 You can create a native executable using: `./mvnw package -Pnative`.
 
@@ -33,12 +35,13 @@ Or you can use Docker to build the native executable using: `./mvnw package -Pna
 
 You can then execute your binary: `./target/devhive-1.0.0-SNAPSHOT-runner`
 
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image-guide .
+If you want to learn more about building native executables, please consult <https://quarkus.io/guides/building-native-image-guide> .
 
 ## Creating a JEE 8 war and deploy
-Deploy war into the Applicationserver e.g. open liberty (https://openliberty.io/)
 
-```
+Deploy war into the Applicationserver e.g. open liberty (<https://openliberty.io/)>
+
+```bash
 ./mvnw clean package -f pom.xml.jee
 cp target/devhive.war /PATH_TO_LIBERTY/wlp/usr/servers/defaultServer/dropins/
 /PATH_TO_LIBERTY/wlp/bin/server start
