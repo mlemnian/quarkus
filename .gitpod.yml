@@ -2,5 +2,9 @@ image:
   file: .gitpod.Dockerfile
   
 tasks:
-  - before: echo "export GRAALVM_HOME=~/.sdkman/candidates/java/20.1.0.r11-grl/" >> .profile && source .profile && ${GRAALVM_HOME}/bin/gu install native-image
+  - before: echo "export GRAALVM_HOME=${HOME}/.sdkman/candidates/java/20.1.0.r11-grl/" >> ${HOME}/.profile && source ${HOME}/.profile && ${GRAALVM_HOME}/bin/gu install native-image
     init: ./mvnw package -Pnative
+
+vscode:
+  extensions:
+    - redhat.vscode-quarkus@1.5.0:w7xQsEjV+6/Tn2l7bIqfhg==
